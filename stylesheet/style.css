@@ -8,8 +8,7 @@
      --color-green: #A0DE3B;
      --color-pink: pink;
      --color-white: white;
-     --color-black: #3C3C3C
-     /* --color-menu: rgb(234,234,234); */
+     --color-black: #3C3C3C;
      --color-btn: rgb(200,178,156);
      --color-grey:  #C1C1CB;
      --color-light: rgba(66, 69, 69, 0.18);
@@ -42,7 +41,6 @@
     
     padding: 0;
     margin: 0;
-    /* max-width: 100%; */
   
 }
 button {
@@ -946,9 +944,7 @@ label {
 }
 .time__content {
      width: 20rem;
-     /* margin: 4rem auto; */
      z-index: 11;
-     border: 2px solid yellow;
 }
 
 .time__display span {
@@ -1033,12 +1029,7 @@ label {
 /* *******************************MEDIA QUERY FOR TABLET*********************************** */
 @media screen and (max-width: 1024px) {
      .home__page .home__grid {
-           max-width: 100%;
-          /* display: flex ;
-          justify-content: center;
-          align-items: center; */
-          border: 2px solid yellow;
-          height: 100vh;
+          width: 100%;
      }
      .home__content .inner__content {
           transform: translateX(20%);
@@ -1181,8 +1172,7 @@ label {
 
 @media screen and (max-width: 600px) {
      .home__page {
-          width: 100%;
-          padding: 3rem;
+          padding: 0rem 1rem;
           margin: 0rem;
      }
      .home__content .home__logo {
@@ -1192,9 +1182,7 @@ label {
           width: 8rem;
      }
      .home__page .home__grid { 
-          width: 100%;
-          margin-top: 3rem;
-          height: 100%;
+          gap: 0rem;
           grid-template-columns: repeat(1, 1fr);
      }
      .home__content .home__description {
@@ -1214,11 +1202,13 @@ label {
      }
      .home__img {
           width: 100%;
+          height: 24rem;
           position: relative;
           transform: translateX(0%);
      }
      .home__img img {
           width: 90%;
+          height: 100%;
      }
      .button {
           display: flex;
