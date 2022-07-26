@@ -1172,8 +1172,8 @@ label {
 
 @media screen and (max-width: 600px) {
      .home__page {
-          padding: 0rem 1rem;
-          margin: 0rem;
+        overflow: hidden;
+        padding: 0rem 1rem;
      }
      .home__content .home__logo {
           width: 100%;
@@ -1186,12 +1186,16 @@ label {
           grid-template-columns: repeat(1, 1fr);
      }
      .home__content .home__description {
-          font-size: var(--small-font);
+          font-size: var(--xsmall-font);
           width: 100%;
+          border:  2px solid black;
+          justify-items: center;
+
      }
      .home__content {
           display: flex;
           justify-content: center;
+         
      }
      .home__content .inner__content {
           text-align: center;
@@ -1207,7 +1211,7 @@ label {
           transform: translateX(0%);
      }
      .home__img img {
-          width: 90%;
+          width: 80%;
           height: 100%;
      }
      .button {
