@@ -1297,7 +1297,14 @@ label {
           }
      }
      
-    
+     .count__details .staff h2 {
+          font-size: 0.7rem;
+          font-weight: 600;
+      }
+      .count__details .staff small {
+          font-size: 0.7rem;
+          font-weight: 800;
+      }
      .dashboard__content {
           position: relative;
      }
