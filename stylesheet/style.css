@@ -1336,7 +1336,7 @@ label {
           background: var(--color-white);
           z-index: 11;
           height: 100vh;
-          width: 9rem;
+          width: 11rem;
           position: fixed;
           top: 0;
           left: -100;
