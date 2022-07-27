@@ -41,7 +41,7 @@
     
     padding: 0;
     margin: 0;
-    overflow: hidden;
+    
   
 }
 button {
@@ -181,6 +181,7 @@ a {
      width: 80%;
      background: none;
      color: var(--color-grey);
+     font-size: var(--small-font);
      font-weight: 400;
      border: none;
      outline: none;
@@ -463,7 +464,7 @@ a {
      position: relative;
 }
 .flex {
-     position: relative;
+     position: fixed;
      padding-left: 2rem;
 }
 .attendance__div .dashboard__flex .dashboard__header {
@@ -522,6 +523,7 @@ a {
 .details {
      margin-top: 1rem;
      display: flex;
+     align-items: center;
      justify-content: space-between;
 }
 .detail {
@@ -546,12 +548,11 @@ a {
      position: absolute;
      right: 5.8rem;
 }
-.detailed img{
-     top: 3px;
-     width: 0.7rem;
-     left: 1.5rem;
-     position: relative;
+.detailed {
+     display: flex;
+     align-items: center;
 }
+
 .detailed select {
      width: 9rem;
      border: 1px solid var(--color-red);
@@ -630,7 +631,7 @@ a {
 }
 .employ__detail {
      display: flex;
-     gap: 1.4rem;
+     gap: 1rem;
      align-items: center;
      position: relative;
 }
@@ -651,13 +652,14 @@ a {
      right: 2rem;
 }
 .detailed img{
-     top: 3px;
+     top: 1px;
      width: 0.7rem;
      left: 1.5rem;
      position: relative;
 }
 .detailed .lefts {
      position: relative;
+     display: none;
      left: 0.5rem;
 }
 .detailed select {
@@ -1178,12 +1180,11 @@ label {
 
 @media screen and (max-width: 600px) {
      * {
-          overflow: hidden;
+          /* overflow: hidden; */
           padding: 0rem;
           margin: 0rem;
      }
      .home__page {
-        overflow-y: hidden;
         padding: 0rem 1rem;
         height: 100vh;
      }
@@ -1264,7 +1265,6 @@ label {
      }
      .dashboard__div .dashboard__flex {
           margin: 0rem;
-         overflow-y: hidden;
      }
      .dashboard__search h1 {
           display: none;
@@ -1286,8 +1286,9 @@ label {
           height: 100vh;
           width: 9rem;
           position: fixed;
+          top: 0;
           left: -100;
-          display: none;
+          /* display: none; */
           animation: moveright 1s ease forwards
      }
      @keyframes moveright {
@@ -1307,22 +1308,28 @@ label {
      #menu {
           position: relative;
           left: 0.5rem;
+          height: 1rem;
+          width: 3rem;
+
      }
      .menuss {
           display: flex;
+          overflow-x: hidden;
      }
      .menuss span {
           display: block;
           position: relative;
      }
+
+     /* ATTENDANT */
      .count__grid {
           grid-template-columns: repeat(1, 1fr);
           gap: 1rem;
      }
      .count__grid .count__details {
-          height: 4rem;
-         
+          height: 4rem;  
       }
+      
 
       .details {
           margin-top: 1rem;
@@ -1525,7 +1532,7 @@ label {
           font-size: var(--font-smallz);
       }
       .dashboard__search label {
-          font-size: var(--font-smallz);
+          font-size: var(--font-small);
       }
       .dashboard__search input {
           width: 5rem;
@@ -1545,10 +1552,9 @@ label {
           position: relative;
       }
       .menuss #close {
-           position: absolute;
-           left: 9rem;
-           bottom: 2rem;
-          
+           position: relative;
+           overflow-x: hidden;
+           top: -1rem;
            font-size: var(--small-font);
            font-weight: 800;
            z-index: 15; 
@@ -1560,6 +1566,21 @@ label {
           padding-top: 1rem;
          
      }
+     .count__grid .employees__count {
+          height: 2rem;
+      }
+     .employees__count .staff h2 {
+          font-size: 0.7rem;
+          text-transform: uppercase;
+          color: #3C3C3C;
+          font-weight: 600;
+      }
+      .employees__count .staff small {
+          font-size: 0.8rem;
+          text-transform: uppercase;
+          color: #3C3C3C;
+          font-weight: 800;
+      }
     
      }
      
