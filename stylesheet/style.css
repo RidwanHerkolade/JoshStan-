@@ -1180,7 +1180,7 @@ label {
 
 @media screen and (max-width: 600px) {
      * {
-          /* overflow: hidden; */
+          overflow: hidden;
           padding: 0rem;
           margin: 0rem;
      }
@@ -1288,7 +1288,7 @@ label {
           position: fixed;
           top: 0;
           left: -100;
-          /* display: none; */
+          display: none;
           animation: moveright 1s ease forwards
      }
      @keyframes moveright {
