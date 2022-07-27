@@ -156,7 +156,6 @@ a {
 }
 .form__groups .form {
      width: 15rem;
-     /* height: 40vh; */
      border-radius: 1rem;
      background: var(--background);
      box-shadow: var(--box-shadow);
@@ -280,6 +279,9 @@ a {
      margin-top: 2.5rem;
      position: relative;
 }
+#closed {
+     display: none;
+}
 .dashboard__links li {
      display: flex;
      height: 2.5rem;
@@ -387,7 +389,12 @@ a {
 .search .log {
      position: relative;
      right: 2rem;
+     top: 0.2rem;
 }
+.search .user {
+     position: relative;
+     top: 0.2rem;
+ }
 .dashboard__count {
      margin-top: 2rem;
      
