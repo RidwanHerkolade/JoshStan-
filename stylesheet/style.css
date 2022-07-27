@@ -1090,6 +1090,7 @@ label {
           color: var(--color-white);
      }
      #closed {
+          display: block;
           position: relative;
           left: 9rem;
           bottom: 6rem;
@@ -1370,6 +1371,13 @@ label {
      .dashboard__content .dashboard__center {
         padding: 0.5rem;
      }
+     #closed {
+          display: block;
+          position: relative;
+          left: 9rem;
+          bottom: 6rem;
+     }
+     
 
      #menu {
           position: relative;
