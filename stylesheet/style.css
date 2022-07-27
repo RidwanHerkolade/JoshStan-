@@ -1032,7 +1032,6 @@ label {
 /* *******************************MEDIA QUERY FOR TABLET*********************************** */
 @media screen and (max-width: 1024px) {
      *{
-          overflow-y: hidden;
           padding: 0rem;
           margin: 0rem;
      }
@@ -1051,21 +1050,71 @@ label {
           transform: translateX(-20%);
      }
      .dashboard__div {
-          grid-template-columns: 22% auto;
+          grid-template-columns: 1fr
      }
      .dashboard__content .dashboard__center {
           padding: 2.5rem 2.5rem;
      }
+     .dashboard__links {
+          position: relative;
+     }
+     .dashboard__search h1 {
+          color: var(--color-white);
+          font-size: var(--xsmall-font);
+      }
     
      .dashboard__links li {
-          font-size: var(--font-smallz);
+          font-size: var(--font-ten);
           text-transform: uppercase;
+     }
+     .count__grid {
+          gap: 1.5rem;
+      }
+     .search label {
+          font-size: var(--font-ten);
+      }
+     .menuss {
+          display: block;
+          position: relative;
+     }
+     #menu {
+          display: block;
+          font-weight: 900;
+          color: var(--color-white);
+     }
+     #closed {
+          position: relative;
+          left: 9rem;
+          bottom: 6rem;
+
+     }
+     #closed span {
+          font-weight: 900;
+          color: var(--color-red);
      }
 
      /* EMPLOYEE PAGE */
      .attendance__div {
-          grid-template-columns: 22% auto;
+          grid-template-columns: 1fr;
 
+     }
+     .flex {
+           
+          box-shadow: var(--box-shadow);
+          background: var(--color-white);
+          z-index: 11;
+          height: 100vh;
+          width: 13rem;
+          position: fixed;
+          top: 0;
+          left: -100;
+          display: none;
+          animation: moveright 1s ease forwards
+     }
+     @keyframes moveright {
+          to {
+               left: 0;
+          }
      }
      .attendance__content .dashboard__center {
           padding: 2.5rem 2rem;
@@ -1090,7 +1139,7 @@ label {
           height: 80%;
       }
       .table__grids {
-          height: 100%;
+          height: 75%;
       }
       
       th, td {
@@ -1098,7 +1147,7 @@ label {
          height: 3rem;
       }
       td .position {
-          font-size: var(--font-smallz);
+          font-size: var(--font-ten);
           text-align: center;
       }
       .devs {
@@ -1108,7 +1157,7 @@ label {
           width: 1.5rem;
       }
       .devs h3 {
-          font-size: var(--font-smallz);
+          font-size: var(--font-ten);
       }
       .preview__details {
           top: -2.5rem;
@@ -1140,7 +1189,11 @@ label {
            padding: 2.5rem 4rem;
      }
      .employees__count .staff h2 {
-          font-size: 0.4rem;
+          font-size: 0.7rem;
+      }
+      .employees__count .staff small{
+          font-size: 0.7rem;
+          font-weight: 800;
       }
       .detail select {
           width: 6rem;
@@ -1155,7 +1208,6 @@ label {
           right: 4.7rem;
       }
       .detailed img {
-          top: 2.5px;
           width: 0.5rem;
       }
       .detail img {
@@ -1163,10 +1215,10 @@ label {
           height: 0.5rem;
       }
       .devs__pro p {
-          font-size: 5px;
+          font-size: var(--font-ten);
       }
       .devs__pro h3 {
-          font-size: var(--font-smallz);
+          font-size: var(--font-ten);
       }
      .arrow__up img {
           width: 0.5rem;
@@ -1180,7 +1232,7 @@ label {
 
 @media screen and (max-width: 600px) {
      * {
-          overflow: hidden;
+          overflow-y: hidden;
           padding: 0rem;
           margin: 0rem;
      }
