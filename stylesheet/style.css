@@ -321,6 +321,7 @@ a {
 }
 .dashboard__links li a span.hovered {
      color: var(--color-white);
+     background: var(--color-red);
      width: 100%;
      border-top-left-radius: 10rem;
      border-bottom-left-radius: 10rem;
@@ -1240,7 +1241,6 @@ label {
 
 @media screen and (max-width: 600px) {
      * {
-          overflow-y: hidden;
           padding: 0rem;
           margin: 0rem;
      }
@@ -1374,8 +1374,13 @@ label {
      #closed {
           display: block;
           position: relative;
-          left: 9rem;
+          color: var(--color-red);
+          left: 9rem; 
           bottom: 6rem;
+     }
+     #closed span {
+          color: var(--color-red);
+          font-weight: 800;
      }
      
 
@@ -1624,15 +1629,6 @@ label {
       .menuss span {
           font-size: var(--small-font);
           position: relative;
-      }
-      .menuss #close {
-           position: relative;
-           overflow-x: hidden;
-           top: -1rem;
-           font-size: var(--small-font);
-           font-weight: 800;
-           z-index: 15; 
-           color: var(--color-red);
       }
      
      .employee__count {
